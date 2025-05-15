@@ -23,19 +23,22 @@ public class UsuarioVO {
 	private Long cpf;
 	private String uf;
 	private String municipio;
+	private String permissao;
 	private Date dataNascimento;
 	private Boolean ativo;
-	
+    private String senha;
+
 	public UsuarioVO(Usuario usuario) {
 		
 		this.id = usuario.getId();
 		this.nome = usuario.getNome();
 		this.cpf = usuario.getCpf();
 		this.uf = usuario.getUf();
+		this.permissao = usuario.getPermissao();
 		this.municipio = usuario.getMunicipio();
 		this.dataNascimento = usuario.getDataNascimento();
 		this.ativo = usuario.getAtivo();
-		
+		this.senha = usuario.getSenha();
 	}
 
 }

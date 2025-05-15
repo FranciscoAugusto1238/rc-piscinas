@@ -34,6 +34,12 @@ public class Usuario {
     
     @Column(name = "municipio")
     private String municipio;
+    
+    @Column(name = "permissao")
+    private String permissao;
+    
+    @Column(name = "senha")
+    private String senha;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_nascimento")
